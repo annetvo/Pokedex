@@ -6,8 +6,8 @@
     height: 500px;
     padding-left: 10px;
     margin: 50px auto;
-    background-color: #e72626;
-    border-radius: 10px;
+    background-color: #bd3131;
+    border-radius: 15px;
     box-shadow: 0 14px 45px rgba(0, 0, 0, 0.22), 0 18px 45px rgba(0, 0, 0, 0.22);
     cursor: pointer;
     border: double black 10px;
