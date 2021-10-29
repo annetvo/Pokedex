@@ -1,0 +1,30 @@
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    height: 500px;
+    padding-left: 10px;
+    margin: 50px auto;
+    background-color: #e72626;
+    border-radius: 10px;
+    box-shadow: 0 14px 45px rgba(0, 0, 0, 0.22), 0 18px 45px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    border: double black 10px;
+    display: flex;
+    font-family: 'VT323', monospace;
+
+}
+.Divider {
+    display: flex;
+    width: 10px;
+    height: 103%;
+    margin: 0 20px;
+    align-items: center;
+    background: #000000;
+}
+
+.divider > * {
+    border-radius: 4px;
+    border: solid #000000 2px;
+}
