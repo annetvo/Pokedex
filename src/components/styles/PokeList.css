@@ -5,8 +5,8 @@
     align-items: center;
     width: 50%;
     height: 80%;
-    padding: 5px;
-    margin-right: 5px;
+    padding: 15px;
+    margin-right: 20px;
     margin-left: 5px;
     border-radius: 5px;
     background: linear-gradient(
@@ -28,3 +28,17 @@
 }
   
 
+
+.search {
+    margin-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    image-rendering: pixelated;
+    
+}

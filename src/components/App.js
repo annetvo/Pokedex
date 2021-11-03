@@ -31,9 +31,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <PokeList handleOnClick={this.handleOnClick} />
-        <div className="Divider"></div>
         <DetailView pokemon={this.state.pokemon} />
+        <div className="Divider"></div>
+        <PokeList handleOnClick={this.handleOnClick} />
       </div>
     );
   }
