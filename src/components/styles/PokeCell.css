@@ -1,10 +1,12 @@
 .poke-cell {
     width: 120px;
     height: 120px;
-    margin: 10px;
-    background-color: rgb(240, 235, 235);
+    margin: 14px;
+    background-color: inherit;
     background-repeat: no-repeat;
-    border-radius: 5px;
+    border-radius: 45%;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
     cursor: pointer;
+
+
   }

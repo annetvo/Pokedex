@@ -1,5 +1,6 @@
 import React from "react";
 import './styles/DetailView.css';
+import history from "./history";
 
 const DetailView = ({ pokemon }) => {
     const { id, name, sprite, type, ability, move4, move, move2, move3 } = pokemon;
@@ -12,7 +13,11 @@ const DetailView = ({ pokemon }) => {
                 <p className="data-char">ability: {ability}</p>
                 <p className="data-char">moves: {move}, {move2}, {move3}, {move4}</p>
             </div>
-            <center><button id="button"></button></center>
+            <div className="buttons">
+            <button id="shopbtn" onClick={() => history.push('/Shop')}><h5>SHOP</h5></button>
+            <button id="button" onClick={() => history.push('/')}></button>
+            <button id="signbtn" onClick={() => history.push('/Signin')}><h5>SIGN IN</h5></button>
+            </div>
 
         </section>
     )

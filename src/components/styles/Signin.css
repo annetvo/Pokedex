@@ -1,0 +1,12 @@
+.SignIn{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    background-color: #bd3131;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+
+  }

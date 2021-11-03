@@ -42,3 +42,11 @@
     image-rendering: pixelated;
     
 }
+
+#searchbar {
+    font-family: 'VT323', monospace;
+    background-color: inherit;
+    color: black;
+    border-radius: 10px;
+    border: inset gray;
+}

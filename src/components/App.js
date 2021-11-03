@@ -34,6 +34,7 @@ class App extends Component {
         <DetailView pokemon={this.state.pokemon} />
         <div className="Divider"></div>
         <PokeList handleOnClick={this.handleOnClick} />
+        
       </div>
     );
   }
