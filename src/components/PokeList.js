@@ -1,7 +1,7 @@
 import React from 'react';
 import PokeCell from './PokeCell';
 import { pokeClasses } from '../pokeClasses';
-import './styles/PokeList.css';
+import './styles/PokeballList.css';
 import { useState } from 'react';
 
 

@@ -3,6 +3,7 @@ import DetailView from './DetailView';
 import PokeList from './PokeList';
 import './styles/App.css';
 import Pokemon from '../Pokemon';
+import PokeballList from './PokeballList';
 
 class App extends Component {
   constructor() {
@@ -34,7 +35,7 @@ class App extends Component {
         <DetailView pokemon={this.state.pokemon} />
         <div className="Divider"></div>
         <PokeList handleOnClick={this.handleOnClick} />
-        
+        <PokeballList handleOnClick={this.handleOnClick} />
       </div>
     );
   }

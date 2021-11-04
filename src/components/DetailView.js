@@ -15,7 +15,7 @@ const DetailView = ({ pokemon }) => {
             </div>
             <div className="buttons">
             <button id="shopbtn" onClick={() => history.push('/Shop')}><h5>SHOP</h5></button>
-            <button id="button" onClick={() => history.push('/')}></button>
+            <button id="button" onClick={() => history.push('/Home')}></button>
             <button id="signbtn" onClick={() => history.push('/Signin')}><h5>SIGN IN</h5></button>
             </div>
 
