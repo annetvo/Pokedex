@@ -1,0 +1,93 @@
+* {
+    font-family: 'VT323', monospace;
+  }
+  
+  .Register {
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;
+      height: 80%;
+      padding: 15px;
+      margin-right: 20px;
+      margin-left: 5px;
+      border-radius: 5px;
+      background: linear-gradient(
+          14deg, 
+          rgb(138, 233, 151) 60%, 
+          rgb(184, 247, 182) 65%
+          );
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+      overflow: scroll;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+      image-rendering: pixelated;
+      border: inset #b31818 3px;
+  }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+  
+    /* Hide scrollbar for Chrome, Safari and Opera */
+  .Register::-webkit-scrollbar {
+        display: none;
+  
+  }
+  
+  #form {
+    justify-content: center;
+  }
+  
+  #email {
+    justify-content: center;
+  }
+  
+  #input {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 3px;
+    background-color: inherit;
+  }
+  
+  #signinbtn {
+    border-radius: 10px;
+    margin-top: 5px;
+    background: radial-gradient(
+        circle farthest-corner at 20% 25%,
+        rgb(233, 241, 218) 9%,
+        rgb(237, 235, 124) 20%,
+        rgb(185, 187, 54) 62%,
+        rgb(196, 173, 43) 100%
+    );
+  }
+  #submitbtn {
+    border-radius: 10px;
+    margin-top: 5px;
+    background: radial-gradient(
+        circle farthest-corner at 20% 25%,
+        rgb(233, 241, 218) 9%,
+        rgb(240, 139, 235) 20%,
+        rgb(196, 93, 190) 62%,
+        rgb(201, 83, 195) 100%
+    );
+    margin-left: 5px;
+  }
+  
+  #submitbtn:hover {
+    background: radial-gradient(
+        circle farthest-corner at 40% 25%,
+        rgb(233, 241, 218) 9%,
+        rgb(184, 237, 124) 20%,
+        rgb(64, 165, 106) 62%,
+        rgb(43, 196, 145) 100%
+    );
+  }
+  
+  #signinbtn:hover {
+    background: radial-gradient(
+        circle farthest-corner at 40% 25%,
+        rgb(233, 241, 218) 9%,
+        rgb(184, 237, 124) 20%,
+        rgb(64, 165, 106) 62%,
+        rgb(43, 196, 145) 100%
+    );
+  }

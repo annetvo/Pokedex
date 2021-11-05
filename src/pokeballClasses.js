@@ -3,7 +3,7 @@ export const pokeballClasses = [
       id: "1",
       type: "Poke Ball",
       price: "200",
-      backgroundPosition: "-10000px 0",
+      backgroundPosition: "-300 1px",
     },
     {
       id: "2",

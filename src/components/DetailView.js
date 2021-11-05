@@ -2,7 +2,8 @@ import React from "react";
 import './styles/DetailView.css';
 import history from "./history";
 
-const DetailView = ({ pokemon }) => {
+const DetailView = ({pokemon, viewChanger}) => {
+
     const { id, name, sprite, type, ability, move4, move, move2, move3 } = pokemon;
     return (
         <section className="detail-view">
@@ -14,11 +15,11 @@ const DetailView = ({ pokemon }) => {
                 <p className="data-char">moves: {move}, {move2}, {move3}, {move4}</p>
             </div>
             <div className="buttons">
-            <button id="shopbtn" onClick={() => history.push('/Shop')}><h5>SHOP</h5></button>
-            <button id="button" onClick={() => history.push('/Home')}></button>
-            <button id="signbtn" onClick={() => history.push('/Signin')}><h5>SIGN IN</h5></button>
-            </div>
+                <button id="shopbtn"onClick={() => viewChanger("PokeballList")}><h5>SHOP</h5></button>
+                <button id="button" onClick={() => viewChanger("PokeList")}></button>
+                <button id="signbtn" onClick={() => viewChanger("SignIn")}><h5>SIGN IN</h5></button>
 
+            </div>
         </section>
     )
 }

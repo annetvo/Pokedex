@@ -25,7 +25,7 @@ const PokeList = ({ handleOnClick }) => {
       <input 
         id="searchbar"
         type="text" 
-        placeholder="Search Type..." 
+        placeholder="search type..." 
         onChange={event => setSearchTerm(event.target.value)}
       />
       <div className="search">
