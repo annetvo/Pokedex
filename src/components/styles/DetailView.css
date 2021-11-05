@@ -1,3 +1,5 @@
+
+
 .detail-view {
     width: 50%;
     height: 100%;
@@ -52,8 +54,10 @@
 #button {
     padding: 20px;
     margin-top: 5px;
+    margin-bottom: 15px;
     width: 40px;
     height: 40px;
+    margin-left: 11em;
     border-radius: 50%;
     background: radial-gradient(
         circle farthest-corner at 40% 25%,
@@ -73,5 +77,76 @@
         rgb(43, 196, 145) 100%
     );
 }
+
+#shopbtn {
+    margin-left: 25px;
+    padding: 0.5em;
+    padding-bottom: 10px;
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    text-align: center;
+    vertical-align: center;
+    font-size: small;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: linear-gradient(
+        rgb(218, 237, 241) 9%,
+        rgb(124, 214, 237) 20%,
+        rgb(64, 90, 165) 62%,
+        rgb(43, 125, 196) 100%
+    );
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+}
+
+
+#shopbtn:hover {
+    background: linear-gradient(
+
+        rgb(184, 237, 124) 20%,
+        rgb(64, 165, 106) 62%,
+        rgb(43, 196, 145) 100%
+    );
+}
+
+#signbtn {
+    margin-left: 4em;
+    padding: 0.5em;
+    padding-bottom: 10px;
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    text-align: center;
+    vertical-align: center;
+    font-size: small;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: linear-gradient(
+        rgb(218, 237, 241) 9%,
+        rgb(124, 214, 237) 20%,
+        rgb(64, 90, 165) 62%,
+        rgb(43, 125, 196) 100%
+    );
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+}
+
+
+#signbtn:hover {
+    background: linear-gradient(
+
+        rgb(184, 237, 124) 20%,
+        rgb(64, 165, 106) 62%,
+        rgb(43, 196, 145) 100%
+    );
+}
+
 
 

@@ -1,4 +1,4 @@
-.poke-list {
+.pokeball-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -22,7 +22,7 @@
     border: inset #b31818 3px;
 }
     /* Hide scrollbar for Chrome, Safari and Opera */
-.poke-list::-webkit-scrollbar {
+.pokeball-list::-webkit-scrollbar {
         display: none;
 
 }

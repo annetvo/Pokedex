@@ -3,16 +3,24 @@ import DetailView from './DetailView';
 import PokeList from './PokeList';
 import './styles/App.css';
 import Pokemon from '../Pokemon';
+import PokeballList from './PokeballList';
+import SignIn from './Signin'
+import Register from './Register';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      pokemon: {}
+      pokemon: {},
+      currentRightView: "PokeList"
     };
 
     this.handleOnClick = this.handleOnClick.bind(this);
+    this.renderRightView = this.renderRightView.bind(this);
+  }
 
+  componentDidMount () {
+    this.handleOnClick(54)
   }
   
   handleOnClick(id) {
@@ -26,18 +34,30 @@ class App extends Component {
     .catch(err => console.log(err));
   }
 
-    
+  renderRightView (viewName) {
+    this.setState(previousState => ({
+      ...previousState,
+      currentRightView: viewName
+    }))
+  }
 
   render() {
     return (
       <div className="App">
-        <DetailView pokemon={this.state.pokemon} />
+        <DetailView
+          pokemon={this.state.pokemon}
+          viewChanger={this.renderRightView}
+        />
         <div className="Divider"></div>
-        <PokeList handleOnClick={this.handleOnClick} />
+        {/* JavaScript short-circuit evaluation */}
+        {(this.state.currentRightView === "PokeList") && <PokeList handleOnClick={this.handleOnClick} />}
+        {(this.state.currentRightView === "SignIn") && <SignIn viewChanger={this.renderRightView}/>}
+        {(this.state.currentRightView === "Register") && <Register viewChanger={this.renderRightView}/>}
+        {(this.state.currentRightView === "PokeballList") && <PokeballList/>}
+        {/* <PokeballList handleOnClick={this.handleOnClick} /> */}
       </div>
     );
   }
 }
-
 
 export default App;

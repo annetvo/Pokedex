@@ -1,7 +1,7 @@
 import React from 'react';
 import PokeCell from './PokeCell';
 import { pokeClasses } from '../pokeClasses';
-import './styles/PokeList.css';
+import './styles/PokeballList.css';
 import { useState } from 'react';
 
 
@@ -23,8 +23,9 @@ const PokeList = ({ handleOnClick }) => {
 
     <section className="poke-list">
       <input 
+        id="searchbar"
         type="text" 
-        placeholder="Search Type..." 
+        placeholder="search type..." 
         onChange={event => setSearchTerm(event.target.value)}
       />
       <div className="search">
